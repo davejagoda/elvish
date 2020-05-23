@@ -1,0 +1,3 @@
+[submodule "tengwarscript-install-guide"]
+	path = tengwarscript-install-guide
+	url = git@github.com:nbeaver/tengwarscript-install-guide.git
