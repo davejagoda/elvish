@@ -1,0 +1,17 @@
+\documentclass[a5paper]{article}
+\usepackage{tikz}
+\usetikzlibrary{shapes,backgrounds}
+\begin{document}
+\pagestyle{empty}
+\def\mcircle{(0,0) circle (3cm)}
+% make another circle using polar coordinates of 60 degrees and 58mm
+\def\bcircle{(60:58mm) circle (3cm)}
+\begin{tikzpicture}
+  \begin{scope}[fill opacity=0.75]
+    \fill[blue] \mcircle;
+    \fill[orange] \bcircle;
+    \draw \mcircle node [align=center] {\scriptsize Manhattan};
+    \draw \bcircle node [align=center] {\scriptsize The\\ \scriptsize Bronx};
+  \end{scope}
+\end{tikzpicture}
+\end{document}

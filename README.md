@@ -14,6 +14,7 @@ On the guest
 
 ```
 cd /vagrant/
-latex elvish_test.tex
-xdvi elvish_test.dvi
+latex one_ring_inscription.tex
+xdvi one_ring_inscription.dvi
+pdflatex one_ring_inscription.tex
 ```
