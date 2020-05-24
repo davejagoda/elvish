@@ -1,0 +1,69 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+\usepackage{listings}
+\usepackage{color}
+
+\title{My first document}
+\author{Dave Jagoda}
+\date{2019-03-16}
+
+\lstset{ % General setup for the package
+  language=Python,
+  basicstyle=\small\sffamily,
+  frame=tb,
+  tabsize=4,
+  columns=fixed,
+  showstringspaces=false,
+  showtabs=false,
+  keepspaces,
+  commentstyle=\color{red},
+  keywordstyle=\color{blue}
+}
+\begin{document}
+
+\maketitle
+\pagenumbering{gobble}
+
+\newpage
+\pagenumbering{roman}
+This is the foreword
+
+\newpage
+\pagenumbering{arabic}
+
+\section{Section}
+
+This is the first section
+
+\subsection{Subsection}
+
+This is the first subsection
+
+\subsubsection{Subsubsection}
+
+This is the first subsubsection
+
+\paragraph{Paragraph}
+
+A paragraph in which Albert Einstein said $E = mc^2$.
+
+\subparagraph{Subparagraph}
+
+A subparagraph.
+
+\begin{equation*}
+  f(x) = x^2
+\end{equation*}
+
+\begin{equation*}
+  \Delta neutral
+\end{equation*}
+
+\section{Another section}
+
+some code
+
+\lstinputlisting{script.py}
+
+\end{document}
